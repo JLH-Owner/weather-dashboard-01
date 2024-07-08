@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <script defer src="assets\script.js"></script>
+    <title>Weather Dashboard</title>
+</head>
+
+<body class="mt-4">
+    <div class="columns is-vcentered">
+        <section class="column is-multiline p-4">
+            <div class="column is-one-half">
+                <div class="card col-12 col-md-8 p-3">
+                    <h1 class="card-header text-uppercase is-size-3">Search by City</h1>
+                    <form id="input-form" class="card-body">
+                        <input name="city" class="input is-medium" id="city" type="text" autofocus="true"
+                            class="form-input" placeholder="Enter City Name" />
+                    </form>
+                    <button id="search" type="submit"><input class="button" type="submit" value="Search"></button>
+                </div>
+                <div class="card col-12 col-md-8 p-3">
+                    <h2 class="search history is-size-4">Search History<span id="search-history-term"></span></h2>
+                    <div id="search-history-container" class="list-group"></div>
+
+                </div>
+            </div>
+        </section>
+        <section class='column'>
+            <div class="card col-12 col-md-8">
+                <div class="card-content">
+                    <div class="search-results">
+                        <div class="title">
+                            <p class="weather is p-4"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="buttons-well"></div>
+</body>
+
+</html>
