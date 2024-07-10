@@ -2,7 +2,7 @@ const searchButton = document.querySelector('#search-btn');
 const search = document.getElementById('#search');
 const results = document.getElementById('#results');
 const city = document.querySelector('#city');
-const buttonsWell = document.querySelector('#buttons-well')
+const buttonsWell = document.getElementById("buttons-well").innerHTML
 
 function renderDetail(city) {
   const nameEl = document.createElement('city')
@@ -34,6 +34,8 @@ function renderDetail(city) {
 
 
   const results = localStorage.setItem('city', JSON.stringify(city));
+
+  
   
 }
 
@@ -46,7 +48,7 @@ document.querySelector("button").addEventListener("click", () => {
   localStorage.searchHistory = JSON.stringify(searchHistory);
 });
 document.querySelector("input").addEventListener("focus", () => {
-  var data = document.querySelector("datalist#searchdata");
+  var data = document.querySelector("datalist#search-history");
   data.innerHTML = "";
   searchHistory.forEach((search) => {
     data.innerHTML = "<option>" + data.innerHTML;
@@ -56,6 +58,9 @@ document.querySelector("input").addEventListener("focus", () => {
 
   // RENDER CITY BUTTONS
     buttonsWell.innerHTML = null;
+    
+    var myArray = [];
+    myArray.push(('#input').valueOf());
 
     for (let city of cities) {
         const buttonEl = document.createElement('button');

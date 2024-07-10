@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script defer src="assets/script.js"></script>
     <title>Weather Dashboard</title>
 </head>
@@ -25,11 +26,6 @@
                             
                         </form>
                     </div>
-                    <div class="card col-12 col-md-8 p-3">
-                        <h2 class="search history is-size-4">Search History<span id="search-history-term"></span></h2>
-                        <div id="search-history" class="search-history"></div>
-                        <datalist id="searchdata"></datalist>
-                    </div>
                 </div>
         </section>
         <section class='column is-auto'>
@@ -45,8 +41,14 @@
             </div>
         </section>
     </div>
-    <div id="buttons-well"></div>
 </body>
+<footer>
+    <div class="card col-12 col-md-8 p-3">
+        <h2 class="search history is-size-4">Search History<span id="search-history"></span></h2>
+        <div id="search-history" class="search-history"></div>
+        <datalist id="search-history"></datalist>
+    </div>
+    <div id="buttons-well"></div>
+</footer>
 
-</html>
-                    
+</html>                            
