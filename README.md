@@ -15,7 +15,7 @@ so that I can plan a trip accordingly
 - WHEN I click on a city in the search history
 - THEN I am again presented with current and future conditions for that city
 
-<img src="assets\Weather-Dashboard.png">
+<img src="assets\images\weather-dashboard.png">
 
 # Links
 * GitHub: https://github.com/JLH-Owner/weather-dashboard-01
