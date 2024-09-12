@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fetchForecastData(data.coord.lat, data.coord.lon);
         saveCity(city);
       });
-  };
+  }
 
   function fetchForecastData(lat, lon) {
     fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`)
